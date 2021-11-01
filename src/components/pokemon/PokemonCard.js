@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import styled, { StyleSheetManager } from 'styled-components';
+import styled from 'styled-components';
 // Import de Link pour transformer les cases en lien. Quand l'utilisateur cliquera
 // sur le pokemon l'utilisateur se vera rediriger sur une autre page 
 // ou il y aura les capacités du pokemon affichés dessus.
@@ -29,20 +29,6 @@ const Card = styled.div`
     -o-user-select: none;
 `;
 
-// Constante de style pour les liens
-
-const styledLink = styled(Link)`
-
-    text-decoration: none;
-    color : black;
-    &:focus,
-    &:hover,
-    &:visited,
-    &:link,
-    &:active {
-        textdecoration: none;
-    }
-`;
 
 export default class PokemonCard extends Component {
 
@@ -77,7 +63,7 @@ export default class PokemonCard extends Component {
                 <Card className="card avatar-background">
                         <h5 className="card-header">{this.state.pokemonIndex}</h5>
                             {this.state.imageLoading ? (
-                                <img src={spinner} style={{width:'5em', height: '5em'}}
+                                <img src={spinner} alt="" style={{width:'5em', height: '5em'}}
                                 className="card-img-top rounded mx-auto d-block mt-2"/>
                             ) : null}
                         <Sprite 

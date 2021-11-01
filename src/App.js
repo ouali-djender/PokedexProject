@@ -1,11 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import './App.css';
 import Dashboard from './components/layouts/Dashboard';
 import NavBar from './components/layouts/NavBar';
 import Pokemon from './components/pokemon/Pokemon';
-import SearchBar from './components/search/SearchBar';
 import backgroundImage from './pattern.png';
+
 function App() {
   return (
     <Router>
