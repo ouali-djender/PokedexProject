@@ -13,7 +13,7 @@ function App() {
         <NavBar/>
         <Switch>
         <div className="container">
-          <Route exact path="/home" component={Dashboard} />
+          <Route exact path="/" component={Dashboard} />
           <Route exact path="/pokemon/:pokemonIndex" component={Pokemon} />
         </div>
         </Switch>
