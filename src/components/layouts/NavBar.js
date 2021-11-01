@@ -56,7 +56,7 @@ export default class NavBar extends Component {
           href="#"
           className="navbar-brand col-sm-3 col-md-2 mr-0 align-items-center"
         >
-          <Logo src="/logo.svg"/>
+          <Logo src="/logoEstiam.jpg"/>
            By Ouali, Jessica, Theo, Elias &  Pierre
         </Branding>
       </nav>
