@@ -37,6 +37,10 @@
 .header{
   float: left;
 }
+
+.padding1{
+  padding-top: 30px;
+}
 /*
 .avatar-background {
   background: linear-gradient(

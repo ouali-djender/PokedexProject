@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { Component } from "react";
+import '../../App.css';
 
 const TYPE_COLORS = {
   normal: "c4c4a4",
@@ -174,7 +175,7 @@ export default class pokemon extends Component {
 
   render() {
     return (
-      <div className="col">
+      <div className="col padding1">
         <div className="card">
           <div className="card-header">
             <div className="row">
