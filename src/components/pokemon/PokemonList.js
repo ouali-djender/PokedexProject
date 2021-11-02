@@ -7,7 +7,7 @@ export default class PokemonList extends Component {
 
     // URL de l'API PokéAPI. L'objet Pokemon store the data of the request
     state = {
-        url : "https://pokeapi.co/api/v2/pokemon?limit=1222&offset=0",
+        url : "https://pokeapi.co/api/v2/pokemon?limit=40&offset=0",
         pokemon : null
     }
     // On va monter les datas de l'API sur l'application dans le DOM
