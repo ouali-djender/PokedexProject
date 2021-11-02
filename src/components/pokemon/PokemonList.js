@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import PokemonCard from './PokemonCard';
+// Client HTTP pour utiliser les données de l'API
 import axios from 'axios';
 
 export default class PokemonList extends Component {
