@@ -57,7 +57,7 @@ export default class NavBar extends Component {
         >
         
           <Logo className="logoImage" src="/logoEstiam.jpg"/>
-           <p>By Ouali, Jessica, Theo, Elias &  Pierre</p>
+           By Ouali, Jessica, Theo, Elias &  Pierre
           
            </Branding>
       </nav>
