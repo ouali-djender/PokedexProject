@@ -11,8 +11,7 @@ const Branding = styled.a`
 `;
 
 const Logo = styled.img`
-  height: 30px;
-  width: 30px;
+  widht:30%
   margin-right: 0.5em;
 `;
 
@@ -56,9 +55,11 @@ export default class NavBar extends Component {
           href="home"
           className="navbar-brand col-sm-3 col-md-2 mr-0 align-items-center"
         >
+        
           <Logo className="logoImage" src="/logoEstiam.jpg"/>
-           By Ouali, Jessica, Theo, Elias &  Pierre
-        </Branding>
+           <p>By Ouali, Jessica, Theo, Elias &  Pierre</p>
+          
+           </Branding>
       </nav>
     );
   }

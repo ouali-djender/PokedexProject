@@ -10,11 +10,33 @@
 }
 
 .logoImage {
-    width: 50px;
-    height: 50px;
+    width: 100%;
 }
 
+.format{
+  width: 200px;
+  height: 150px;
+  padding-bottom: 55vh;
+}
 
+.format2{
+  width: 100px;
+  height: 250px;
+}
+
+.format3{
+  padding-top: 10vh;
+  display: flex;
+  justify-content: center;
+}
+
+.format4{
+  margin-top: 10vh;
+}
+
+.header{
+  float: left;
+}
 /*
 .avatar-background {
   background: linear-gradient(

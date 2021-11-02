@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../../App.css';
 
 export default class SearchBar extends Component {
   render() {
@@ -7,7 +8,7 @@ export default class SearchBar extends Component {
         <form>
           <input
             placeholder="Pokemon"
-            className="form-control mx-auto"
+            className="form-control mx-auto format4"
             style={{
               backgroundColor: 'white transparent',
               height: '1.75em',

@@ -4,6 +4,7 @@ import styled from 'styled-components';
 // sur le pokemon l'utilisateur se vera rediriger sur une autre page 
 // ou il y aura les capacités du pokemon affichés dessus.
 import { Link } from 'react-router-dom';
+import '../../App.css';
 
 import spinner from '../pokemon/spinner.gif';
 
@@ -58,16 +59,17 @@ export default class PokemonCard extends Component {
         // Dans le return avec la balise <Link> j'englobe toute les cartes pour qu'elle devienne 
         // des liens afin de pouvoir cliquez dessus.
         return (
-            <div className="col-md-3 col-sm-6 mb-5">
+            <div className="col-md-3 col-sm-6 mb-5 format">
                 <Link to={`pokemon/${this.state.pokemonIndex}`}>
                 <Card className="card avatar-background">
                         <h5 className="card-header">{this.state.pokemonIndex}</h5>
                             {this.state.imageLoading ? (
-                                <img src={spinner} alt="" style={{width:'5em', height: '5em'}}
+                                <img src={spinner} alt=""
                                 className="card-img-top rounded mx-auto d-block mt-2"/>
                             ) : null}
+                           
                         <Sprite 
-                            className="card-img-top rounded mx-auto mt-2"
+                            className="card-img-top rounded mx-auto mt-2 format2"
                             onLoad={() => this.setState({ imageLoading: false })}
                             onError={() => this.setState({ toManyRequests: true })}
                             src={this.state.imageUrl}

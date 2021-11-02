@@ -25,7 +25,7 @@ export default class PokemonList extends Component {
         return (
             <React.Fragment>
             {this.state.pokemon ? (
-                <div className="row">
+                <div className="row format3">
                     {this.state.pokemon.map(pokemon => (
                         <PokemonCard
                             key={pokemon.name}
